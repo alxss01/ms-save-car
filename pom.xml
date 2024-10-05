@@ -56,12 +56,6 @@
 			<artifactId>micrometer-registry-prometheus</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.owasp</groupId>
-			<artifactId>dependency-check-maven</artifactId>
-			<version>10.0.2</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -98,18 +92,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.owasp</groupId>
-				<artifactId>dependency-check-maven</artifactId>
-				<version>10.0.4</version>
-				 <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>aggregate</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-			</plugin>
+			
 		</plugins>
 	</build>
 
