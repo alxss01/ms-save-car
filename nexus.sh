@@ -7,7 +7,7 @@ groupId=$($mvn -f "$worke_dir/pom.xml" help:evaluate -Dexpression=project.groupI
 artifactId=$($mvn -f "$worke_dir/pom.xml" help:evaluate -Dexpression=project.artifactId -q -DforceStdout) || echo "Falha ao capturar artifactId do pom.xml" exit 0
 repositoryId="devops-maven-snapshot"
 
-mvn deploy -B \
+mvn deploy -B -s ~/.m2/settings.xml \
     -Durl=http://localhost:8081 \
     -Dfile=target/$artifactId.jar \
     -DgroupId=$groupId \
