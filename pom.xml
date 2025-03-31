@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>br.com.devsenior</groupId>
 	<artifactId>ms-save-car</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>ms-save-car</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
